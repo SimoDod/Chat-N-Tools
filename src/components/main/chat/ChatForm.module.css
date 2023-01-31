@@ -1,0 +1,64 @@
+.form {
+  background-color: red;
+  text-align: center;
+  background-color: darkgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form button {
+  display: block;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  border-radius: 6px;
+  margin: 10px auto;
+  width: 120px;
+  height: 30px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: rgb(255, 255, 154);
+}
+
+.form .nickname {
+  height: 30px;
+}
+.form input {
+  margin: 3px auto;
+  display: block;
+  background-color: antiquewhite;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  border: solid 1px black;
+}
+
+.color_picker {
+  margin: 0px;
+}
+
+.color_picker > p {
+  width: 15%;
+  display: inline-block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.color_picker p label {
+  width: 10px;
+  height: 10px;
+  font-size: small;
+}
+
+.color_picker p input[type="radio"] {
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.form .color_picker_info {
+  margin: 10px 0px;
+}

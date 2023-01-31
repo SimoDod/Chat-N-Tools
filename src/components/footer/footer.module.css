@@ -1,0 +1,15 @@
+.footer  {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    background-color: lightgray;
+    margin: 0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-style: inset;
+    border-width: 1px;
+}

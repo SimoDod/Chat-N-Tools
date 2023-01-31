@@ -1,0 +1,8 @@
+.wrapper {
+    background-color: rgb(145, 145, 148);
+    max-width: 600px;
+    margin: 2px auto 10% auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0.1rem;
+}

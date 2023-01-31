@@ -1,0 +1,28 @@
+.input {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input input{
+    margin-right: 5px;
+    border-radius: 6px;
+    font-size: medium;
+    border: solid 1px;
+    background-color: azure;
+}
+
+.input button{
+    background-color: rgb(154, 192, 189);
+    margin-left: 5px;
+    border-radius: 6px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.input input::placeholder {
+    font-size: 14px;
+}
+
+.input button:hover{
+    background-color: lightslategray;
+}

@@ -1,0 +1,36 @@
+.navbar {
+    list-style: none;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0.8em;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-style: outset;
+    border-width: 1px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.navbar li button {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(156, 173, 184);
+    border-radius: 6px;
+    padding: 0.1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar li button:hover {
+   background-color: rgb(142, 190, 176);
+}
+
+
+
+
+

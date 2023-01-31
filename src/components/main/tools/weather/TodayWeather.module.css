@@ -1,0 +1,69 @@
+.today-weather {
+  background-color: rgb(166, 223, 220);
+  border-radius: 10px;
+  box-sizing: content-box;
+  padding: 5px;
+}
+
+.today-weather h5 {
+  margin: 0;
+}
+
+.today-weather p {
+  margin-top: 0;
+}
+
+.today-weather .temp {
+  text-align: center;
+  margin: 18px;
+}
+.today-weather .time h4 {
+  text-align: center;
+  margin: 5px;
+}
+
+.today-weather div p {
+  text-align: center;
+  display: inline;
+}
+
+.today-weather hr {
+  color: rgb(180, 223, 220);
+}
+
+.icon {
+  height: 50px;
+}
+
+.temp .icon{
+  display: block;
+  margin-bottom: 10px;
+  margin: 5px auto;
+}
+
+.temp .current_temp{
+  font-size: 50px;
+  padding-left: 1rem;
+}
+
+.grad {
+  display: inline-block;
+  font-size: 35%;
+  vertical-align: 100%;
+  margin-left: 4px;
+}
+
+.feels_like {
+  font-size: medium;
+}
+
+.feelslike_grad {
+  display: inline;
+  font-size: 50%;
+  vertical-align: 0.28rem;
+  margin-left: 4px;
+}
+
+.humidity {
+  font-size: 80%;
+}

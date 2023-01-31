@@ -1,0 +1,19 @@
+.contacts {
+    background-color: lightgray;
+    margin: 2% auto;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    border-style: outset;
+    border-width: 1px;
+}
+
+.contacts h1 {
+    margin: 0;
+}
+
+.contacts p {
+    padding: 1em;
+}

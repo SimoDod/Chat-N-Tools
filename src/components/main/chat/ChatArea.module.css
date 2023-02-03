@@ -11,13 +11,13 @@
   border-style: outset;
   border-color: black;
   border-width: 1px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .chat_area p {
-  color: rgb(198, 197, 197);
-  font-size: 16px;
+  color: rgb(0, 0, 0);
   padding: 2px 10px;
+  font-size: 16px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .refresh {
@@ -35,23 +35,5 @@
 }
 
 .refresh:hover {
-    background-color: rgb(255, 255, 154);
-}
-
-.chat_text {
-    font-size: 14px;
-    text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
-}
-
-.chat_nickname {
-    font-size: 16px;
-    text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
+  background-color: rgb(255, 255, 154);
 }

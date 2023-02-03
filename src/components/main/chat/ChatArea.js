@@ -3,7 +3,7 @@ import { Fragment, useState, useEffect } from "react";
 import { collection, query, getDocs } from "@firebase/firestore";
 import { firestore } from "../../../firebase_setup/firebase";
 
-const ChatArea = (props) => {
+const ChatArea = () => {
   const [info, setInfo] = useState([]);
 
   const getData = async () => {
@@ -23,36 +23,36 @@ const ChatArea = (props) => {
     getData();
   }, []);
 
-  const element = info
-    .sort((elA, elB) => {
-      return elA.chatData.timeStamp - elB.chatData.timeStamp;
-    })
-    .map((element) => {
-      const message = element.chatData.message;
-      const id = element.chatData.id;
-      const color = element.chatData.color;
-      const nickname = element.chatData.nickname;
-      const date = element.chatData.date;
-      const hours = element.chatData.time.hours;
-      const minutes = element.chatData.time.minutes;
-      const seconds = element.chatData.time.seconds;
-      const time = `${hours}:${minutes}:${seconds}`;
+  const element = () => {
+    return info
+      .sort((elA, elB) => {
+        return elA.chatData.timeStamp - elB.chatData.timeStamp;
+      })
+      .map((element) => {
+        const message = element.chatData.message;
+        const id = element.chatData.id;
+        const color = element.chatData.color;
+        const nickname = element.chatData.nickname;
+        const date = element.chatData.date;
+        const hours = element.chatData.time.hours;
+        const minutes = element.chatData.time.minutes;
+        const seconds = element.chatData.time.seconds;
+        const time = `${hours}:${minutes}:${seconds}`;
 
-      return (
-        <p key={id}>
-          <span style={{ fontSize: "12px" }}>
-            [{date}][{time}]
-          </span>{" "}
-          &#60;{" "}
-          <span className={classes.chat_nickname}>
-            <span className={classes.chat_text} style={{ color }}>
+        return (
+          <p key={id}>
+            <span style={{ fontSize: "11px" }}>
+              [{date}][{time}]
+            </span>{" "}
+            &#60;{" "}
+            <span className={classes.chat_nickname} style={{ color }}>
               {nickname}
             </span>{" "}
-            =&#62; {message}
-          </span>
-        </p>
-      );
-    });
+            &#62; {message}
+          </p>
+        );
+      });
+  };
 
   const scrollDown = () => {
     const objDiv = document.getElementById("chat-area-div");
@@ -64,7 +64,7 @@ const ChatArea = (props) => {
   return (
     <Fragment>
       <div id="chat-area-div" className={classes.chat_area}>
-        {element}
+        {element()}
       </div>
       <button onClick={getData} className={classes.refresh}>
         Refresh

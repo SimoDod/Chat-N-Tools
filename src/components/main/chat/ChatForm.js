@@ -41,7 +41,7 @@ const reRender = () => {
  
 }
 
-const ChatForm = (props) => {
+const ChatForm = () => {
   
   return (
     <form onSubmit={dataHandler} className={classes.form}>
@@ -70,8 +70,11 @@ const ChatForm = (props) => {
           <input type="radio" name="color" value="blue" />
           <label htmlFor="size_3">Blue</label>
         </p>
+        <p>
+          <input type="radio" name="color" value="yellow" />
+          <label htmlFor="size_4">Yellow</label>
+        </p>
       </div>
-
       <button onClick={reRender} name="chat_data" type="submit">
         Send
       </button>
